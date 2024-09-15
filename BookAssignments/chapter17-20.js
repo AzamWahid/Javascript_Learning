@@ -158,6 +158,30 @@ if (cookFound === false) { }
 document.write('<br>');
 document.write('<br>');
 
+// 8. Write a program to identify the largest number in the given array. 
+largeArray = [24, 53, 78, 91, 12];
+let largest = largeArray[0];
+for (i = 0; i < largeArray.length; i++) {
+    if (largeArray[i] > largest) {
+        largest = largeArray[i];
+    }
+}
+document.write('largest number is ' + largest);
+document.write('<br>');
+document.write('<br>');
+
+// 9. Write a program to identify the smallest number in the given array.
+smallArray = [24, 53, 78, 91, 12]
+let smallest = smallArray[0];
+for (i = 0; i < smallArray.length; i++) {
+    if (smallArray[i] < smallest) {
+        smallest = smallArray[i];
+    }
+}
+document.write('Samllest number is ' + smallest);
+document.write('<br>');
+document.write('<br>');
+
 // 10. Write a program to print multiples of 5 ranging 1 to 100.
 
 for (i = 1; i <= 20; i++) {
