@@ -17,7 +17,7 @@ document.write('<br>');
 // Find and display the length of user input in your browser
 
 var fvrtModel = prompt('Your favourite model');
-document.write('My favourite phone is: '+fvrtModel+'<br>'+'Length of string.'+fvrtModel.length);
+document.write('My favourite phone is: ' + fvrtModel + '<br>' + 'Length of string.' + fvrtModel.length);
 
 document.write('<br>');
 document.write('<br>');
@@ -27,7 +27,7 @@ document.write('<br>');
 // and display the result in your browser .
 
 var word = 'Pakistani'
-document.write("String: "+word + "<br>"+"Index of 'n': "+ word.indexOf('n'));
+document.write("String: " + word + "<br>" + "Index of 'n': " + word.indexOf('n'));
 
 document.write('<br>');
 document.write('<br>');
@@ -36,7 +36,7 @@ document.write('<br>');
 // and display the result in your browser.
 
 var wordHello = 'Hello World'
-document.write("String: "+wordHello + "<br>"+"Index of 'l': "+ wordHello.lastIndexOf('l'));
+document.write("String: " + wordHello + "<br>" + "Index of 'l': " + wordHello.lastIndexOf('l'));
 
 document.write('<br>');
 document.write('<br>');
@@ -45,7 +45,7 @@ document.write('<br>');
 //  word “Pakistani” and display the result in your browser.
 
 var wordfindonIndex = 'Pakistani'
-document.write("String: "+wordfindonIndex + "<br>"+"Charater at index 3 : "+ wordfindonIndex.charAt(3));
+document.write("String: " + wordfindonIndex + "<br>" + "Charater at index 3 : " + wordfindonIndex.charAt(3));
 
 document.write('<br>');
 document.write('<br>');
@@ -64,9 +64,9 @@ document.write('<br>');
 
 var cityName = 'Hyderabad';
 
-document.write('City : '+cityName);
+document.write('City : ' + cityName);
 document.write('<br>');
-document.write('After Replacement : '+cityName.replace('Hyder','Islam'));
+document.write('After Replacement : ' + cityName.replace('Hyder', 'Islam'));
 
 document.write('<br>');
 document.write('<br>');
@@ -76,7 +76,7 @@ document.write('<br>');
 
 var message = 'Ali and Sami are best friends. They play cricket and football together.';
 
-document.write(message.replaceAll('and','&'));
+document.write(message.replaceAll('and', '&'));
 
 document.write('<br>');
 document.write('<br>');
@@ -86,13 +86,13 @@ document.write('<br>');
 
 var newVal = "472";
 var newValNum = Number(newVal);
-document.write('Value: '+ newVal);
+document.write('Value: ' + newVal);
 document.write('<br>');
-document.write('Type: '+  typeof newVal);
+document.write('Type: ' + typeof newVal);
 document.write('<br>');
-document.write('Value: '+ newValNum);
+document.write('Value: ' + newValNum);
 document.write('<br>');
-document.write('Type: '+  typeof newValNum);
+document.write('Type: ' + typeof newValNum);
 
 
 document.write('<br>');
@@ -104,9 +104,9 @@ document.write('<br>');
 
 var usersmallInput = prompt('write in small');
 
-document.write('User Input: '+usersmallInput);
+document.write('User Input: ' + usersmallInput);
 document.write('<br>');
-document.write('UpperCase: '+usersmallInput.toUpperCase());
+document.write('UpperCase: ' + usersmallInput.toUpperCase());
 
 document.write('<br>');
 document.write('<br>');
@@ -114,11 +114,11 @@ document.write('<br>');
 // 11. Write a program that takes user input. 
 // Convert and show the input in title case.
 
-var usertitleInput = prompt('write in small');
+var usertitleInput = prompt('write in uper');
 
-document.write('User Input: '+usertitleInput);
+document.write('User Input: ' + usertitleInput);
 document.write('<br>');
-document.write('UpperCase: '+usertitleInput.charAt(0).toUpperCase()+usertitleInput.slice(1));
+document.write('UpperCase: ' + usertitleInput.charAt(0).toUpperCase() + usertitleInput.slice(1));
 
 
 document.write('<br>');
@@ -128,7 +128,27 @@ document.write('<br>');
 // Remove the dot to display “3536” display in your browser.
 
 var newNum = 35.36;
-document.write(newNum.toString().replace('.',''));
+document.write(newNum.toString().replace('.', ''));
+
+document.write('<br>');
+document.write('<br>');
+
+
+// 13. Write a program to take user input and store username in a variable. 
+// If the username contains any special symbol among [@ . , !], 
+// prompt the user to enter a valid username. For character codes of [@ .
+// Note: ASCII code of ! is 33 
+//       ASCII code of , is 44 
+//       ASCII code of . is 46 
+//       ASCII code of @ is 64
+
+var userName = prompt('tell me your user name');
+if (userName.includes("@") || userName.includes(".") || userName.includes(",") || userName.includes("!")) {
+    alert("Invalid username! Please enter a valid username without @, ., ,, or !");
+} else {
+    document.write(userName);
+}
+
 
 document.write('<br>');
 document.write('<br>');
